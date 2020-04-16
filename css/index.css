@@ -72,6 +72,11 @@ header nav .top-menu li a:hover {
     .top-menu {
         flex: 1;
     }
+
+    .about-us p{
+        text-align: left;
+        margin: 5px 20px;
+    }
 }
 
 main{
@@ -191,13 +196,50 @@ h3{
     justify-content: center;
     text-decoration: underline;
     color: black;
-    margin: 50px;
+    margin: 20px 50px;
     padding: 5px;
     border: 1px solid transparent;
 }
 
 .go-to-all-products a:hover {
-    
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
+
+/*.site-footer{
+    width: 100%;
+    display: block;
+    border-top: 1px solid #000;
+    padding: 20px 0;
+    margin: 0 auto;
+    color: #aaa;
+    background-color: black;
+    
+}*/
+
+.footer-nav{
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: 1px;
+    align-items: center;
+    list-style: none;
+    padding: 25px;
+    margin: 0;
+    background-color: #363333;
+}
+
+.footer-nav li{
+    padding: 5px 10px;
+}
+
+.footer li a{
+    text-decoration: none;
+    color:white;
+    border: 1px solid transparent;
+}
+
+footer img {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+
