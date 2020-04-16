@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: auto;
+}
+
+h1{
+    font-family: Righteous, cursive;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav .search {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+header nav .top-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+header nav .top-menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+header nav .top-menu li a:hover {
+    border: 1px solid black;
+    
+}
+
+.banner {
+    background-image: url(../img/zerowaste_header.png);
+    background-position: top;
+    background-size: cover;
+    min-height: 400px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+@media (min-width: 620px) {
+
+    header nav {
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    header nav .top-menu{
+        justify-content: flex-end;
+    }
+
+    header nav .top-menu li a {
+        padding: 20px;
+    }
+
+    .top-menu {
+        flex: 1;
+    }
+}
+
+main{
+    text-align: center;
+}
+
