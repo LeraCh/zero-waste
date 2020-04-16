@@ -205,16 +205,6 @@ h3{
     font-weight: bold;   
 }
 
-/*.site-footer{
-    width: 100%;
-    display: block;
-    border-top: 1px solid #000;
-    padding: 20px 0;
-    margin: 0 auto;
-    color: #aaa;
-    background-color: black;
-    
-}*/
 
 .footer-nav{
     display: flex;
