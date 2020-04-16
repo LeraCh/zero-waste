@@ -5,6 +5,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     margin: auto;
+    max-width: 998px;
 }
 
 h1{
@@ -77,3 +78,126 @@ main{
     text-align: center;
 }
 
+h2, .ngo {
+    margin: 0;
+}
+
+main .subname{
+    margin: 20px;
+}
+
+h3{
+    font-size: 1.1rem;
+    margin: 40px;
+}
+
+.educational-activities, .ecoshop-activities, .work-with-urban-authorities,
+.work-with-business{
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 5px;
+    max-width: 300px;
+    
+}
+
+#main-directions-of-work{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.articles-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.article-what-is-zerowaste img, .article-composting img{
+    margin: 20px;
+    padding: 5px;
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.articles p{
+    text-align: start;
+    margin: 0 20px;
+    padding: 5px;
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.all-articles a{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    color: black;
+    margin: 20px 50px;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+.all-articles a:hover {
+    
+    font-weight: bold;
+    
+}
+
+.ecoshop-block img{
+    margin: 10px;
+    padding: 0;
+    max-width: 230px;
+    max-height: 300px;
+}
+
+
+.ecoshop-block{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+@media(min-width: 600px){
+
+    .ecoshop-block{
+    display: grid;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; 
+   
+    }
+}
+
+
+@media(min-width: 890px){
+
+    .ecoshop-block{
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; 
+   
+}
+
+}
+
+.go-to-all-products a{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    color: black;
+    margin: 50px;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+.go-to-all-products a:hover {
+    
+    font-weight: bold;
+    
+}
