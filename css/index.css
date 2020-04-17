@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
 
+:root {
+  --modal-duration: 1s;
+  --modal-color: #428bca;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -81,16 +86,98 @@ header nav .top-menu li a:hover {
 }
 
 
-
-.button{
-    height: 38px;
-    background: #ed3795;
-    border: 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: #ffffff; 
-
+.button {
+  background: #333;
+  padding: 1em 2em;
+  color:white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  align-items: center; 
 }
+
+.button:hover {
+  background: black;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  margin: 10% auto;
+  width: 60%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+  margin: 0;
+}
+
+.modal-header {
+  background: var(--modal-color);
+  padding: 15px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.modal-body {
+  padding: 10px 20px;
+  background: #fff;
+}
+
+.modal-footer {
+  background: var(--modal-color);
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.close {
+  color: #ccc;
+  float: right;
+  font-size: 30px;
+  color: #fff;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 620px) {
@@ -312,9 +399,26 @@ h3{
 #message input[type="submit"]{
     padding: 4px;
     height: 25px;
-    width: 70%;
-    margin-bottom: 70px;
+    width: 70%; 
 }
+
+.btn1{
+    margin-bottom: 70px;
+    background: #ed3795;
+    color:white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.btn1:hover{
+    background: #333;
+}
+
+
+
+
 
 #message textarea{
     width: 70%;
@@ -345,26 +449,6 @@ footer p a:hover{
 
 
 
-/*.footer-nav{
-    display: flex;
-    flex-wrap: wrap;
-    letter-spacing: 1px;
-    align-items: center;
-    list-style: none;
-    padding: 25px;
-    margin: 0;
-    background-color: #363333;
-}
-
-.footer-nav li{
-    padding: 5px 10px;
-}
-
-.footer li a{
-    text-decoration: none;
-    color:white;
-    border: 1px solid transparent;
-}*/
 
 footer img {
     height: 1.2rem;
