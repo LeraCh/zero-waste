@@ -67,8 +67,8 @@ header nav .top-menu li a:hover {
 
     header nav {
         display: flex;
-        margin-left: 20px;
-        margin-right: 20px;
+        margin: 20px;
+        
     }
 
     header nav .top-menu{
@@ -76,7 +76,7 @@ header nav .top-menu li a:hover {
     }
 
     header nav .top-menu li a {
-        padding: 20px;
+        padding: 5px 20px;
     }
 
     .top-menu {
@@ -206,7 +206,7 @@ h3{
     justify-content: center;
     text-decoration: underline;
     color: black;
-    margin: 20px 50px;
+    margin: 20px 50px 80px 50px;
     padding: 5px;
     border: 1px solid transparent;
 }
@@ -253,11 +253,16 @@ h3{
         width: 50%; 
     }
 
+    #message input[type="submit"]{
+        margin-bottom: 70px;
+    }
+
     #footer{
         display: flex;
         justify-content: center;
-        align-content: center;
+        align-items: center;
         width: 100%;
+        margin:auto;
 
     }
 }
@@ -289,17 +294,19 @@ h3{
 #footer{
     padding: 20px;
     margin-top: 30px;
-    color: white;
-    background-color: #2a2b2e;
+    color:black;
+    border-top: 1px solid #2a2b2e;
+    border-radius: 4px;
     text-align: center;
     text-decoration: none;
     list-style: none;
+    
 }
 
 footer p a{
     text-decoration: none;
     list-style: none;
-    color: white;
+    color: black;
 }
 
 footer p a:hover{
