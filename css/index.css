@@ -53,6 +53,16 @@ header nav .top-menu li a:hover {
     justify-content: center;
 }
 
+.button{
+    height: 38px;
+    background: #ed3795;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff; 
+
+}
+
 @media (min-width: 620px) {
 
     header nav {
@@ -73,7 +83,7 @@ header nav .top-menu li a:hover {
         flex: 1;
     }
 
-    .about-us p{
+    .about-us p, .contacts p{
         text-align: left;
         margin: 5px 20px;
     }
@@ -92,7 +102,7 @@ main .subname{
 }
 
 h3{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: 40px;
 }
 
@@ -205,8 +215,65 @@ h3{
     font-weight: bold;   
 }
 
+.team-members img{
+    height: 200px;
+    width: 200px;
+}
 
-.footer-nav{
+.team-members figure img, .contacts figure img{
+    height: 20px;
+    width: 20px;
+}
+
+.partners img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+@media(min-width: 620px){
+
+    .team-members, .partners{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #contacts-paragr{
+        float: left;
+        text-align: left;
+        width: 45%;
+    }
+
+
+    #message{
+        float: right;
+        width: 50%;
+        
+    }
+}
+
+
+
+#message{
+    padding: 15px;
+}
+
+#message input[type="text"], input[type="email"], input[type="submit"]{
+    padding: 4px;
+    height: 25px;
+    width: 70%;
+}
+
+#message textarea{
+    width: 70%;
+    height: 150px;
+}
+
+
+
+/*.footer-nav{
     display: flex;
     flex-wrap: wrap;
     letter-spacing: 1px;
@@ -225,7 +292,7 @@ h3{
     text-decoration: none;
     color:white;
     border: 1px solid transparent;
-}
+}*/
 
 footer img {
     height: 1.2rem;
